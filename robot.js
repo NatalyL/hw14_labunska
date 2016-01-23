@@ -11,3 +11,11 @@ var i;
 for (i = 0; i < 16; i++) {
     east();
 }
+
+//Level_3
+
+var i;
+for (i = 0; i < 7; i++) {
+    south();
+    east();
+}
