@@ -32,3 +32,27 @@ for (i = 0; i < 13; i++) {
 }
 
 //Level_5
+
+var n = '';
+for (var i = 0; i < 31; i++) {
+    if (isFree('south') && (n != 'n')) {
+        south();
+        n = 's';
+        continue;
+    }
+    else if (isFree('east') && (n != 'w')) {
+        east();
+        n = 'e';
+        continue;
+    }
+    else if (isFree('west') && (n != 'e')) {
+        west();
+        n = 'w';
+        continue;
+    }
+    else {
+        north();
+        n = 'n';
+        continue;
+    }
+}
