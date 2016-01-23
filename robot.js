@@ -5,4 +5,9 @@
 north();
 north();
 
+//Level_2
 
+var i;
+for (i = 0; i < 16; i++) {
+    east();
+}
